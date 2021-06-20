@@ -1,3 +1,27 @@
+@import "reset.css";
+
+@import "background.css";
+@import "weather.css";
+@import "clock.css";
+@import "quotes.css";
+@import "todo.css";
+@import "greetings.css";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
 .hidden {
   display: none;
+}
+
+.section {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }

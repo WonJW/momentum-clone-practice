@@ -5,32 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Momentum</title>
 </head>
 <body>
-    <h2 class="clock">00:00:00</h2>
-    <form class="login-form hidden">
-        <input
-            required
-            maxlength="15"
-            type="text"
-            placeholder="What is yout name?"
-        />
-        <input type="submit" value="Log In" />
-    </form>
-    <h1 class="greeting hidden"></h1>
-    <form class="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter." required />
-    </form>
-    <ul class="todo-list"></ul>
-    <div class="quote">
-        <span></span>
-        <span></span>
-    </div>
     <div class="weather">
         <span></span>
         <span></span>
     </div>
+    <div class="section">
+    <h2 class="clock">00:00:00</h2>
+    <div class="login">
+        <form class="login-form hidden">
+            <input class="login-form__write"
+                required
+                maxlength="15"
+                type="text"
+                placeholder="What is your name?"
+            />
+            <input class="login-form__btn" type="submit" value="Log In" />
+        </form>
+        <h1 class="greeting hidden"></h1>
+    </div>
+    <div class="todo">
+        <form class="todo-form">
+            <input type="text" placeholder="Write a To Do" required />
+            <input class="todo-form__btn" type="submit" value="Press" />
+        </form>
+        <ul class="todo-list"></ul>
+    </div>
+    </div>
+    <div class="quote">
+        <span class="quote-quote"></span>
+        <span class="quote-author"></span>
+    </div>
+
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>

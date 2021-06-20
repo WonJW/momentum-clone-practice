@@ -1,0 +1,27 @@
+.login {
+  font-size: 40px;
+  margin: 50px;
+  opacity: 0.9;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 2px solid white;
+  opacity: 0.8;
+  color: white;
+  font-size: 25px;
+}
+
+.login-form__write {
+  width: 250px;
+}
+
+.login-form__write::placeholder {
+  color: white;
+}
