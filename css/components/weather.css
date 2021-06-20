@@ -11,12 +11,13 @@
 .weather {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   position: absolute;
-  top: 30px;
-  left: 30px;
+  bottom: 30px;
+  right: 30px;
   font-size: 20px;
   font-weight: 400;
+  font-style: italic;
   opacity: 0;
   transform: translateX(var(--rotate-value-r));
   animation: weatherLoadingAnimation 1s ease-in-out forwards;
@@ -34,5 +35,5 @@
 
 .weather span:hover {
   transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--gray-color);
 }

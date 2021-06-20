@@ -1,4 +1,5 @@
 :root {
   --rotate-value: 30px;
   --rotate-value-r: -30px;
+  --gray-color: rgba(0, 0, 0, 0.6);
 }

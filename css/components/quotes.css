@@ -9,12 +9,13 @@
 }
 
 .quote {
+  font-style: italic;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  top: 30px;
+  left: 30px;
   opacity: 0;
   transform: translateX(var(--rotate-value));
   animation: quotesLoaingAnimation 1s ease-in-out forwards;
@@ -37,6 +38,7 @@
 
 .quote-quote:hover,
 .quote-author:hover {
+  left: 70;
   transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--gray-color);
 }

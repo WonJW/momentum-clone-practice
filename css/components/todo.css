@@ -22,12 +22,13 @@
 
 .todo-form:focus-within {
   transform: scale(1.2);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--gray-color);
 }
 
 .todo input {
   font-size: 22px;
   font-weight: 400;
+  font-style: italic;
   border: none;
   border-bottom: 2px solid white;
   background-color: rgba(0, 0, 0, 0);
@@ -51,13 +52,26 @@
   margin-top: 10px;
   padding: 5px;
   font-size: 22px;
+  font-style: italic;
   will-change: transform;
   transition: transform 0.2s ease-in-out;
 }
 
 .todo li:hover {
   transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--gray-color);
+}
+
+@keyframes btnBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 .todo button {
@@ -66,8 +80,25 @@
   font-size: 24px;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0);
+  will-change: transform;
 }
 
 .todo button:hover {
   color: red;
+  animation: btnBeat 1s ease-in-out infinite;
+}
+
+@keyframes appendToDoList {
+  from {
+    background-color: var(--gray-color);
+    transform: scale(1.1);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+    transform: none;
+  }
+}
+
+.allNew {
+  animation: appendToDoList 0.5s ease-in-out forwards;
 }

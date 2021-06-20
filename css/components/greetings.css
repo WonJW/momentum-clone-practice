@@ -27,7 +27,7 @@
 
 .login-form:focus-within {
   transform: scale(1.2);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--gray-color);
 }
 
 .login-form input {
@@ -37,6 +37,7 @@
   opacity: 0.9;
   color: white;
   font-size: 25px;
+  font-style: italic;
 }
 
 .login-form__write {
@@ -45,4 +46,8 @@
 
 .login-form__write::placeholder {
   color: white;
+}
+
+.isIn {
+  animation: greetingsLoadingAnimation 0.7s ease-in-out forwards;
 }
