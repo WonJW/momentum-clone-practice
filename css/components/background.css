@@ -1,0 +1,21 @@
+@keyframes BGloadingAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+img {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  animation: BGloadingAnimation 4s ease-in-out;
+}

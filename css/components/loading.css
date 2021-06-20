@@ -1,0 +1,25 @@
+@keyframes loadingAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+
+.loading {
+  will-change: opacity;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  font-size: 34px;
+  animation: loadingAnimation 3s ease-in forwards;
+}

@@ -1,0 +1,17 @@
+@keyframes clockLoadingAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 0.9;
+  }
+}
+
+.clock {
+  font-size: 150px;
+  font-weight: 600;
+  opacity: 0;
+  animation: clockLoadingAnimation 1s ease-in-out forwards;
+  animation-delay: 4s;
+}
