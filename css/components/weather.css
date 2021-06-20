@@ -18,10 +18,21 @@
   font-size: 20px;
   font-weight: 400;
   opacity: 0;
+  transform: translateX(var(--rotate-value-r));
   animation: weatherLoadingAnimation 1s ease-in-out forwards;
   animation-delay: 5s;
 }
 
+.weather span {
+  will-change: transform;
+  transition: transform 0.2s ease-in-out;
+}
+
 .weather span:first-child {
   margin-bottom: 10px;
+}
+
+.weather span:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.5);
 }

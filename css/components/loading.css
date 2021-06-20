@@ -21,5 +21,6 @@
   height: 100vh;
   top: 0;
   font-size: 34px;
+  will-change: transform;
   animation: loadingAnimation 3s ease-in forwards;
 }

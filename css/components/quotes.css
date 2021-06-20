@@ -16,6 +16,7 @@
   bottom: 30px;
   right: 30px;
   opacity: 0;
+  transform: translateX(var(--rotate-value));
   animation: quotesLoaingAnimation 1s ease-in-out forwards;
   animation-delay: 5s;
 }
@@ -23,9 +24,19 @@
 .quote-quote {
   font-size: 20px;
   font-weight: 400;
+  will-change: transform;
+  transition: transform 0.2s ease-in-out;
 }
 
 .quote-author {
   margin-top: 10px;
   font-size: 18px;
+  will-change: transform;
+  transition: transform 0.2s ease-in-out;
+}
+
+.quote-quote:hover,
+.quote-author:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.5);
 }

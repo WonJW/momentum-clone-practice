@@ -12,6 +12,7 @@
   font-size: 150px;
   font-weight: 600;
   opacity: 0;
+  transform: translateY(var(--rotate-value-r));
   animation: clockLoadingAnimation 1s ease-in-out forwards;
   animation-delay: 4s;
 }
