@@ -54,9 +54,7 @@
   font-size: 22px;
   font-style: italic;
   will-change: transform;
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  display: flex;
-  justify-content: flex-start;
+  transition: transform 0.2s ease-in-out, backgound-color 0.2s ease-in-out;
 }
 
 .todo li:hover {
@@ -101,6 +99,6 @@
   }
 }
 
-.todo-list__new {
-  animation: appendToDoList 0.5s ease-in-out forwards;
+.allnew {
+  animation: appendToDoList 0.5s ease-in-out;
 }
