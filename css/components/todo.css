@@ -91,7 +91,7 @@
 @keyframes appendToDoList {
   from {
     background-color: var(--gray-color);
-    transform: scale(1.11);
+    transform: scale(1.1);
   }
   to {
     background-color: rgba(0, 0, 0, 0);
