@@ -85,7 +85,7 @@
 
 .todo button:hover {
   color: red;
-  animation: btnBeat 1s ease-in-out infinite;
+  animation: btnBeat 0.8s ease-in-out infinite;
 }
 
 @keyframes appendToDoList {
