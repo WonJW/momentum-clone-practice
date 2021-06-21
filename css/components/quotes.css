@@ -36,9 +36,8 @@
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-.quote-quote:hover,
-.quote-author:hover {
-  left: 70;
-  transform: scale(1.1);
+.quote-author:hover,
+.quote-quote:hover {
+  transform: scale(1.1) translateX(10px);
   background-color: var(--gray-color);
 }

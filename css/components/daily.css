@@ -1,4 +1,4 @@
-@keyframes weatherLoadingAnimation {
+@keyframes dailyLoadingAnimation {
   0% {
     opacity: 0;
   }
@@ -8,15 +8,11 @@
   }
 }
 
-.weather {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.daily {
   position: absolute;
-  bottom: 30px;
+  bottom: 90px;
   right: 30px;
   font-size: 20px;
-  font-weight: 400;
   font-style: italic;
   opacity: 0;
   transform: translateX(var(--rotate-value-r));
@@ -24,16 +20,12 @@
   animation-delay: 5s;
 }
 
-.weather span {
+.daily h3 {
   will-change: transform;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-.weather span:first-child {
-  margin-bottom: 10px;
-}
-
-.weather span:hover {
+.daily h3:hover {
   transform: scale(1.1) translateX(-10px);
   background-color: var(--gray-color);
 }
