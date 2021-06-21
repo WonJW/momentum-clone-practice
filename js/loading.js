@@ -4,8 +4,8 @@ function loadingDot() {
     loading.innerText = loading.innerText+"."
 }
 
-let timer = setInterval(loadingDot, 600);
+let timer = setInterval(loadingDot, 500);
 
 setTimeout(() => {
-    clearInterval(timer); loading.innerText = "";
-}, 5000)
+    clearInterval(timer); loading.innerText = "Complete!";
+}, 1500)

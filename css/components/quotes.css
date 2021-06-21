@@ -26,14 +26,14 @@
   font-size: 20px;
   font-weight: 400;
   will-change: transform;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .quote-author {
   margin-top: 10px;
   font-size: 18px;
   will-change: transform;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .quote-quote:hover,

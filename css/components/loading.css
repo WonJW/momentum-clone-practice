@@ -21,5 +21,6 @@
   top: 0;
   font-size: 34px;
   will-change: opacity;
-  animation: loadingAnimation 3s ease-in forwards;
+  animation: loadingAnimation 2.5s ease-in forwards;
+  animation-delay: 1500ms;
 }
