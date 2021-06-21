@@ -1,14 +1,14 @@
 const images = [
-    "japan.jpg",
-    "korea.jpg",
-    "london.jpg",
-    "ocean.jpg",
-    "sand.jpg",
-    "stadium.jpg",
-    "sunset.jpg",
-    "temple.jpg",
-    "venice.jpg",
-    "world.jpg"
+    "darksand.jpg",
+    "boat.png",
+    "castle.png",
+    "horse.jpg",
+    "crescent.jpg",
+    "mountain.jpg",
+    "northstar.jpg",
+    "beach.png",
+    "sky.png",
+    "sunsetmountain.png"
 ];
 
 const chosenImage = images[Math.floor(Math.random() * quotes.length)];
